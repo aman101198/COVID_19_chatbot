@@ -1,0 +1,139 @@
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- greet
+- spread
+- prevention
+- definition_corona
+- definition_covid
+- difference
+- symptoms
+- if_infected_what_to_do
+- vaccine
+- virus_on_surface
+- sanitize_surface
+- groceries
+- corona_from_animals
+- country_of_origin
+- stats
+- bye
+- wear_mask
+entities:
+- animal
+- medicine
+responses:
+  utter_corona_from_animals:
+  - text: There are cases of animal to animal infetion of COVID-19. There are only
+      a few cases of animal to human transmission. While handling animals also basic
+      hygiene must be maintained.
+  utter_country_of_origin:
+  - text: The first case was reported in Wuhan city of China.
+  utter_default:
+  - text: Sorry!! I did not get that. Please try again.
+  utter_definition_corona:
+  - text: Coronaviruses are a large family of viruses which may cause illness in animals
+      or humans.
+  utter_definition_covid:
+  - text: COVID-19 is the infectious disease caused by the most recently discovered
+      coronavirus.
+  utter_difference:
+  - text: Coronaviruses are a large family of viruses which may cause illness in animals
+      or humans. COVID-19 is the infectious disease caused by the most recently discovered
+      coronavirus.
+  utter_goodbye:
+  - text: stay safe! Bye
+  utter_greet:
+  - text: Hi! This is COVID 19 HELP BOT. How can I help you?
+  utter_groceries:
+  - text: Wash them the same way you should do under any circumstance before handling
+      them, wash your hands with soap and water. Then, wash fruits and vegetables
+      thoroughly with clean water, especially if you eat them raw.
+  utter_if_infected_what_to_do:
+  - text: If you have minor symptoms, such as a slight cough or a mild fever, there
+      is generally no need to seek medical care. Stay at home, self-isolate and monitor
+      your symptoms. Follow national guidance on self-isolation.
+  utter_mask:
+  - image: https://www.straitstimes.com/sites/default/files/styles/article_pictrure_780x520_/public/articles/2020/01/31/ab_mask3_310120.jpg?itok=mwu2-iTw&timestamp=1580446011
+    text: If you choose to wear a mask, then- 1. Before touching the mask, clean hands
+      with an alcohol-based hand rub or soap and water 2. Take the mask and inspect
+      it for tears or holes. 3. Orient which side is the top side (where the metal
+      strip is). 4. Ensure the proper side of the mask faces outwards (the coloured
+      side). 5. Place the mask to your face. Pinch the metal strip or stiff edge of
+      the mask so it moulds to the shape of your nose. 6. Pull down the mask’s bottom
+      so it covers your mouth and your chin. 7. Do not touch the mask while you are
+      wearing it for protection. 8. After use, take off the mask with clean hands;
+      remove the elastic loops from behind the ears while keeping the mask away from
+      your face and clothes, to avoid touching potentially contaminated surfaces of
+      the mask. 9. Discard the mask in a closed bin immediately after use. Do not
+      reuse the mask. 10. Perform hand hygiene after touching or discarding the mask
+      – Use alcohol-based hand rub or, if visibly soiled, wash your hands with soap
+      and water.
+  utter_prevention:
+  - text: 1. Practicing hand and respiratory hygiene is important at ALL times and
+      is the best way to protect others and yourself. 2. When possible maintain at
+      least a 1 meter distance between yourself and others. This is especially important
+      if you are standing by someone who is coughing or sneezing.. 3. Regularly and
+      thoroughly clean your hands with an alcohol-based hand rub or wash them with
+      soap and water. Why? Washing your hands with soap and water or using alcohol-based
+      hand rub kills viruses that may be on your hands. 4. Avoid going to crowded
+      places. Why? Where people come together in crowds, you are more likely to come
+      into close contact with someone that has COVID-19 and it is more difficult to
+      maintain physical distance of 1 metre. 5. Avoid touching eyes, nose and mouth.
+      Why? Hands touch many surfaces and can pick up viruses. Once contaminated, hands
+      can transfer the virus to your eyes, nose or mouth. From there, the virus can
+      enter your body and infect you. 6. Make sure you, and the people around you,
+      follow good respiratory hygiene. This means covering your mouth and nose with
+      your bent elbow or tissue when you cough or sneeze. Then dispose of the used
+      tissue immediately and wash your hands. Why? Droplets spread virus. By following
+      good respiratory hygiene, you protect the people around you from viruses such
+      as cold, flu and COVID-19. 7. If you have a fever, cough and difficulty breathing,
+      seek medical attention, but call by telephone in advance if possible and follow
+      the directions of your local health authority. Why? National and local authorities
+      will have the most up to date information on the situation in your area. Calling
+      in advance will allow your health care provider to quickly direct you to the
+      right health facility. This will also protect you and help prevent spread of
+      viruses and other infections. 8. Stay home and self-isolate even with minor
+      symptoms such as cough, headache, mild fever, until you recover. Have someone
+      bring you supplies. If you need to leave your house, wear a mask to avoid infecting
+      others. Why? Avoiding contact with others will protect them from possudo
+  utter_sanitize_surface:
+  - text: Coronavirus on surfaces can easily be cleaned with common household disinfectants
+      that will kill the virus.
+  utter_spread:
+  - text: People can catch COVID-19 from others who have the virus. The disease spreads
+      primarily from person to person through small droplets from the nose or mouth,
+      which are expelled when a person with COVID-19 coughs, sneezes, or speaks.
+  utter_stats:
+  - text: Click on the link to know about the COVID 19 stats [link](https://www.mohfw.gov.in/)
+  utter_symptoms:
+  - text: The most common symptoms of COVID-19 are - 1. Fever 2. dry cough 3. tiredness
+      Other symptoms that are less common and may affect some patients include - 1.
+      Aches and Pains 2. nasal congestion 3. headache 4. sore throat 5. conjunctivitis
+      6. diarrhea 7. loss of taste or smell 8. rash on skin 9. discoloration of fingers
+      or toes
+  utter_vaccine:
+  - text: No
+  utter_virus_on_surface:
+  - text: Studies have shown that the COVID-19 virus can survive for up to 72 hours
+      on plastic and stainless steel, less than 4 hours on copper and less than 24
+      hours on cardboard.
+actions:
+- utter_corona_from_animals
+- utter_country_of_origin
+- utter_default
+- utter_definition_corona
+- utter_definition_covid
+- utter_difference
+- utter_goodbye
+- utter_greet
+- utter_groceries
+- utter_if_infected_what_to_do
+- utter_mask
+- utter_prevention
+- utter_sanitize_surface
+- utter_spread
+- utter_stats
+- utter_symptoms
+- utter_vaccine
+- utter_virus_on_surface
